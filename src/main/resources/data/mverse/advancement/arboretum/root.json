@@ -1,0 +1,30 @@
+{
+    "parent": "mverse:root",
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_leaves"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.arboretum.root",
+            "fallback": "Arboretum"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.arboretum.root.description",
+            "fallback": "That's a lot of trees"
+        },
+
+        "hidden": true,
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "dimension": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:arboretum"
+            }
+        }
+    }
+}

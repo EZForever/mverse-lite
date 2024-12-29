@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:overworld",
+    "generator": {
+        "type": "flat",
+        "settings": {
+            "layers": [
+                { "height": 1, "block": "minecraft:bedrock" },
+                { "height": 63, "block": "minecraft:deepslate" },
+                { "height": 60, "block": "minecraft:stone" },
+                { "height": 3, "block": "minecraft:dirt" },
+                { "height": 1, "block": "minecraft:grass_block" },
+                { "height": 5, "block": "minecraft:powder_snow" }
+            ],
+            "biome": "mverse:snowy_plains_copy",
+            "lakes": true,
+            "features": true,
+            "structure_overrides": [
+                "mverse:treasures",
+                "minecraft:igloos",
+                "minecraft:villages",
+                "minecraft:pillager_outposts",
+                "minecraft:mineshafts",
+                "minecraft:strongholds",
+                "minecraft:ruined_portals",
+                "minecraft:trial_chambers"
+            ]
+        }
+    }
+}

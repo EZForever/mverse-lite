@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "mverse:avalanche/tick",
+        "mverse:crystal_palace/tick",
+        "mverse:trial_edition/tick"
+    ]
+}

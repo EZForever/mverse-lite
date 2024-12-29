@@ -1,0 +1,30 @@
+{
+    "parent": "mverse:root",
+    "display": {
+        "icon": {
+            "id": "minecraft:tuff_bricks"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.trial_edition.root",
+            "fallback": "Trial Edition"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.trial_edition.root.description",
+            "fallback": "A strange yet familiar Instance"
+        },
+
+        "hidden": true,
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "dimension": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:trial_edition"
+            }
+        }
+    }
+}

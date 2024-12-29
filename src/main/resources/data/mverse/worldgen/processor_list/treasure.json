@@ -1,0 +1,137 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:barrel"
+                        },
+                        "probability": 0.15
+                    },
+                    "location_predicate": {
+                        "predicate_type": "always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:barrel",
+                        "Properties": {
+                            "facing": "east"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_loot",
+                        "loot_table": "minecraft:chests/underwater_ruin_big"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:barrel"
+                        },
+                        "probability": 0.15
+                    },
+                    "location_predicate": {
+                        "predicate_type": "always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:barrel",
+                        "Properties": {
+                            "facing": "west"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_loot",
+                        "loot_table": "minecraft:chests/shipwreck_supply"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:barrel"
+                        },
+                        "probability": 0.15
+                    },
+                    "location_predicate": {
+                        "predicate_type": "always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:barrel",
+                        "Properties": {
+                            "facing": "south"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_loot",
+                        "loot_table": "minecraft:chests/shipwreck_treasure"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:barrel"
+                        },
+                        "probability": 0.15
+                    },
+                    "location_predicate": {
+                        "predicate_type": "always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:barrel",
+                        "Properties": {
+                            "facing": "north"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_loot",
+                        "loot_table": "minecraft:chests/stronghold_crossing"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:barrel"
+                        },
+                        "probability": 0.15
+                    },
+                    "location_predicate": {
+                        "predicate_type": "always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:barrel",
+                        "Properties": {
+                            "facing": "up"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_loot",
+                        "loot_table": "minecraft:chests/stronghold_corridor"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "always_true"
+                    },
+                    "location_predicate": {
+                        "predicate_type": "always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:barrel",
+                        "Properties": {
+                            "facing": "down"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_loot",
+                        "loot_table": "minecraft:chests/end_city_treasure"
+                    }
+                }
+            ]
+        }
+    ]
+}

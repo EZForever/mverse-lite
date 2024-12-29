@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:overworld",
+    "generator": {
+        "type": "noise",
+        "settings": "minecraft:large_biomes",
+        "biome_source": {
+            "type": "fixed",
+            "biome": "minecraft:desert"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "io.github.ezforever.mverse.lite.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CompassItemMixin",
+    "ServerPlayerEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

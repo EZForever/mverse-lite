@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "wither": {
+            "trigger": "minecraft:summoned_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:wither",
+                    "location": {
+                        "dimension": "mverse:silent_hill"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mverse:silent_hill/event_wither"
+    }
+}

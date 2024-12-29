@@ -1,0 +1,27 @@
+{
+    "type": "mverse:arboretum",
+    "generator": {
+        "type": "noise",
+        "settings": "mverse:arboretum",
+        "biome_source": {
+            "type": "checkerboard",
+            "scale": 1,
+            "biomes": [
+                "minecraft:cherry_grove",
+                "minecraft:flower_forest",
+
+                "minecraft:taiga",
+                "minecraft:old_growth_pine_taiga",
+
+                "minecraft:mushroom_fields",
+                "minecraft:dark_forest",
+                
+                "minecraft:birch_forest",
+                "minecraft:old_growth_birch_forest",
+
+                "minecraft:jungle",
+                "minecraft:bamboo_jungle"
+            ]
+        }
+    }
+}

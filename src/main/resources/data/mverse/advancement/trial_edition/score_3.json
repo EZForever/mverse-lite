@@ -1,0 +1,28 @@
+{
+    "parent": "mverse:trial_edition/score_2",
+    "display": {
+        "icon": {
+            "id": "minecraft:trial_key"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.trial_edition.score.3",
+            "fallback": "MLG!"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.trial_edition.score.3.description",
+            "fallback": "Kill 50 monsters in a Trial Edition instance!!"
+        },
+
+        "frame": "challenge"
+    },
+    "criteria": {
+        "score": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 300
+    }
+}

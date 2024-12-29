@@ -1,0 +1,23 @@
+{
+    "parent": "mverse:avalanche/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:barrel"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.avalanche.score.1",
+            "fallback": "Peasant Digger"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.avalanche.score.1.description",
+            "fallback": "Loot 10 barrels in The Avalanche"
+        }
+    },
+    "criteria": {
+        "score": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

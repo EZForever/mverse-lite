@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:overworld_caves",
+    "generator": {
+        "type": "flat",
+        "settings": {
+            "layers": [
+                { "height": 1, "block": "minecraft:bedrock" },
+                { "height": 126, "block": "minecraft:tuff_bricks" },
+                { "height": 1, "block": "minecraft:bedrock" },
+                { "height": 132, "block": "minecraft:air" },
+                { "height": 1, "block": "minecraft:barrier" }
+            ],
+            "biome": "minecraft:dripstone_caves",
+            "lakes": false,
+            "features": false,
+            "structure_overrides": [
+                "mverse:many_trial_chambers"
+            ]
+        }
+    }
+}

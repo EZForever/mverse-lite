@@ -1,0 +1,44 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:compass",
+            "components": {
+                "minecraft:lodestone_tracker": {
+                    "target": {
+                        "pos": [0, 0, 0],
+                        "dimension": "minecraft:overworld"
+                    },
+                    "tracked": false
+                }
+            }
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.root",
+            "fallback": "M'verse"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.root.description",
+            "fallback": "Give \"/mv anchor\" a try"
+        },
+
+        "announce_to_chat": false,
+        "background": "minecraft:textures/misc/enchanted_glint_entity.png"
+    },
+    "criteria": {
+        "level": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "level": {
+                            "min": 3
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

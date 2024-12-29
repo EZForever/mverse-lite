@@ -1,0 +1,23 @@
+{
+    "parent": "mverse:badminton/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:fire_charge"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.badminton.score.1",
+            "fallback": "Amateur Shuttler"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.badminton.score.1.description",
+            "fallback": "Score 10 points in the BADminton field"
+        }
+    },
+    "criteria": {
+        "score": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

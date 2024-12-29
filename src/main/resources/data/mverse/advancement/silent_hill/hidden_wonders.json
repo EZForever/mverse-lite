@@ -1,0 +1,33 @@
+{
+    "parent": "mverse:silent_hill/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:reinforced_deepslate"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.silent_hill.hidden_wonders",
+            "fallback": "Hidden Wonders"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.silent_hill.hidden_wonders.description",
+            "fallback": "These seems to be in a better shape than the Overworld ones"
+        },
+
+        "hidden": true
+    },
+    "criteria": {
+        "location": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "dimension": "mverse:silent_hill",
+                        "structures": "minecraft:ancient_city"
+                    }
+                }
+            }
+        }
+    }
+}

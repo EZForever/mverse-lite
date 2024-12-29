@@ -1,0 +1,49 @@
+{
+    "parent": "mverse:silent_hill/warden_1",
+    "display": {
+        "icon": {
+            "id": "minecraft:mace",
+            "components": {
+                "minecraft:enchantments": {
+                    "levels": {
+                        "minecraft:density": 5,
+                        "minecraft:wind_burst": 3
+                    }
+                }
+            }
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.silent_hill.warden_2",
+            "fallback": "Warden What?"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.silent_hill.warden_2.description",
+            "fallback": "Deal more than 100 damage to the Warden in a single hit!"
+        },
+
+        "frame": "challenge"
+    },
+    "criteria": {
+        "kill_warden": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:warden",
+                    "location": {
+                        "dimension": "mverse:silent_hill"
+                    }
+                },
+                "damage": {
+                    "taken": {
+                        "min": 100.0
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 300
+    }
+}

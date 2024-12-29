@@ -1,0 +1,29 @@
+{
+    "parent": "mverse:silent_hill/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:wither_skeleton_skull"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.silent_hill.anime_fight",
+            "fallback": "Average Anime Fight"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.silent_hill.anime_fight.description",
+            "fallback": "Summon a Wither in the face of Warden"
+        },
+
+        "frame": "goal",
+        "hidden": true
+    },
+    "criteria": {
+        "wither": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}

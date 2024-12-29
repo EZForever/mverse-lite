@@ -1,0 +1,22 @@
+{
+    "type": "mverse:badminton",
+    "generator": {
+        "type": "flat",
+        "settings": {
+            "layers": [
+                { "height": 1, "block": "minecraft:bedrock" },
+                { "height": 23, "block": "minecraft:blackstone" },
+                { "height": 2, "block": "minecraft:basalt" },
+                { "height": 4, "block": "minecraft:soul_sand" },
+                { "height": 2, "block": "minecraft:soul_soil" }
+            ],
+            "biome": "minecraft:soul_sand_valley",
+            "lakes": true,
+            "features": true,
+            "structure_overrides": [
+                "minecraft:nether_fossils",
+                "minecraft:ruined_portals"
+            ]
+        }
+    }
+}

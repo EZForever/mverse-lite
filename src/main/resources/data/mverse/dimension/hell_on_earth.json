@@ -1,0 +1,11 @@
+{
+    "type": "mverse:hell_on_earth",
+    "generator": {
+        "type": "noise",
+        "settings": "mverse:hell_on_earth",
+        "biome_source": {
+            "type": "multi_noise",
+            "preset": "minecraft:nether"
+        }
+    }
+}

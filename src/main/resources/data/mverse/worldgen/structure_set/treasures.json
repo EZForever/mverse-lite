@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 10387312,
+    "separation": 0,
+    "spacing": 2
+  },
+  "structures": [
+    {
+      "structure": "mverse:treasure",
+      "weight": 1
+    }
+  ]
+}

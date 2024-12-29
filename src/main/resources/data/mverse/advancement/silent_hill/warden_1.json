@@ -1,0 +1,48 @@
+{
+    "parent": "mverse:silent_hill/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:netherite_axe",
+            "components": {
+                "minecraft:enchantments": {
+                    "levels": {
+                        "minecraft:sharpness": 5
+                    }
+                }
+            }
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.silent_hill.warden_1",
+            "fallback": "Warden Who?"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.silent_hill.warden_1.description",
+            "fallback": "Deal more than 20 damage to the Warden in a single hit"
+        },
+
+        "frame": "goal"
+    },
+    "criteria": {
+        "kill_warden": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:warden",
+                    "location": {
+                        "dimension": "mverse:silent_hill"
+                    }
+                },
+                "damage": {
+                    "taken": {
+                        "min": 20.0
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}

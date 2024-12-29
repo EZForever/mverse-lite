@@ -1,0 +1,17 @@
+{
+  "mverse.dimension.minecraft.overworld": "Overworld",
+  "mverse.dimension.minecraft.the_nether": "The Nether",
+  "mverse.dimension.minecraft.the_end": "The End",
+
+  "mverse.anchor.name": "Teleportation Anchor",
+  "mverse.anchor.dimension_and_pos": "%s, (%s, %s)",
+  "mverse.anchor.single_use": "Single Use",
+  "mverse.anchor.food_grade": "Food Grade",
+
+  "mverse.command.disallowed_dimension": "The specified dimension is not allowed",
+  "mverse.command.insufficient_exp_level": "You need at least %s EXP level(s) to get an anchor",
+  "mverse.command.death_pos_not_available": "Last death position not available for %s",
+
+  "mverse.teleport.target_not_valid": "Your lodestone is missing",
+  "mverse.teleport.target_obstructed": "Your teleport destination was obstructed"
+}

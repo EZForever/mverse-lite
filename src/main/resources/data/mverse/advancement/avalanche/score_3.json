@@ -1,0 +1,28 @@
+{
+    "parent": "mverse:avalanche/score_2",
+    "display": {
+        "icon": {
+            "id": "minecraft:barrel"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.avalanche.score.3",
+            "fallback": "Prizewinning Digger"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.avalanche.score.3.description",
+            "fallback": "Loot 50 barrels in The Avalanche"
+        },
+
+        "frame": "challenge"
+    },
+    "criteria": {
+        "score": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 300
+    }
+}

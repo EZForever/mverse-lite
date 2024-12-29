@@ -1,0 +1,29 @@
+{
+    "criteria": {
+        "score": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:ghast",
+                    "location": {
+                        "dimension": "mverse:badminton"
+                    }
+                },
+                "killing_blow": {
+                    "direct_entity": {
+                        "type": "minecraft:fireball"
+                    },
+                    "tags": [
+                        {
+                            "id": "minecraft:is_projectile",
+                            "expected": true
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mverse:badminton/event_score"
+    }
+}

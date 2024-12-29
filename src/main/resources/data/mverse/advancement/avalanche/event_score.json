@@ -1,0 +1,83 @@
+{
+    "criteria": {
+        "loot_1": {
+            "trigger": "minecraft:player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/underwater_ruin_big",
+                "player": {
+                    "location": {
+                        "dimension": "mverse:avalanche"
+                    }
+                }
+            }
+        },
+        "loot_2": {
+            "trigger": "minecraft:player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/shipwreck_supply",
+                "player": {
+                    "location": {
+                        "dimension": "mverse:avalanche"
+                    }
+                }
+            }
+        },
+        "loot_3": {
+            "trigger": "minecraft:player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/shipwreck_treasure",
+                "player": {
+                    "location": {
+                        "dimension": "mverse:avalanche"
+                    }
+                }
+            }
+        },
+        "loot_4": {
+            "trigger": "minecraft:player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/stronghold_crossing",
+                "player": {
+                    "location": {
+                        "dimension": "mverse:avalanche"
+                    }
+                }
+            }
+        },
+        "loot_5": {
+            "trigger": "minecraft:player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/stronghold_corridor",
+                "player": {
+                    "location": {
+                        "dimension": "mverse:avalanche"
+                    }
+                }
+            }
+        },
+        "loot_6": {
+            "trigger": "minecraft:player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/end_city_treasure",
+                "player": {
+                    "location": {
+                        "dimension": "mverse:avalanche"
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "loot_1",
+            "loot_2",
+            "loot_3",
+            "loot_4",
+            "loot_5",
+            "loot_6"
+        ]
+    ],
+    "rewards": {
+        "function": "mverse:avalanche/event_score"
+    }
+}

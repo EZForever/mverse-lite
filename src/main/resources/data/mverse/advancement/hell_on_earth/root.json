@@ -1,0 +1,30 @@
+{
+    "parent": "mverse:root",
+    "display": {
+        "icon": {
+            "id": "minecraft:netherrack"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.hell_on_earth.root",
+            "fallback": "Hell on Earth"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.hell_on_earth.root.description",
+            "fallback": "What the hell is this place?"
+        },
+
+        "hidden": true,
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "dimension": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:hell_on_earth"
+            }
+        }
+    }
+}

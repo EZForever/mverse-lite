@@ -1,0 +1,49 @@
+{
+    "parent": "mverse:root",
+    "display": {
+        "icon": {
+            "id": "minecraft:lodestone"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.destroy_anchor",
+            "fallback": "Reanchoring Failure"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.destroy_anchor.description",
+            "fallback": "Appearently compasses hate magnets now..."
+        },
+
+        "hidden": true
+    },
+    "criteria": {
+        "destroy_anchor": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:lodestone"
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                            "items": "minecraft:compass",
+                            "predicates": {
+                                "minecraft:custom_data": "{ mverse_lite_anchor: 1 }"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 30
+    }
+}

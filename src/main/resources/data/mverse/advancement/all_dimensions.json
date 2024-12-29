@@ -1,0 +1,104 @@
+{
+    "parent": "mverse:root",
+    "display": {
+        "icon": {
+            "id": "minecraft:heart_of_the_sea",
+            "components": {
+                "minecraft:enchantments": {
+                    "levels": {
+                        "minecraft:infinity": 1
+                    }
+                }
+            }
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.all_dimensions",
+            "fallback": "Infinite Improbability Drive"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.all_dimensions.description",
+            "fallback": "Visit all M'verse dimensions... and back to the Overworld"
+        },
+
+        "frame": "challenge"
+    },
+    "criteria": {
+        "minecraft:overworld": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "minecraft:overworld"
+            }
+        },
+        "mverse:arboretum": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:arboretum"
+            }
+        },
+        "mverse:avalanche": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:avalanche"
+            }
+        },
+        "mverse:badminton": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:badminton"
+            }
+        },
+        "mverse:crystal_palace": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:crystal_palace"
+            }
+        },
+        "mverse:hell_on_earth": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:hell_on_earth"
+            }
+        },
+        "mverse:sandbox": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:sandbox"
+            }
+        },
+        "mverse:sands_of_gold": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:sands_of_gold"
+            }
+        },
+        "mverse:silent_hill": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:silent_hill"
+            }
+        },
+        "mverse:trial_edition": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:trial_edition"
+            }
+        }
+    },
+    "requirements": [
+        [ "minecraft:overworld" ],
+        [ "mverse:arboretum" ],
+        [ "mverse:avalanche" ],
+        [ "mverse:badminton" ],
+        [ "mverse:crystal_palace" ],
+        [ "mverse:hell_on_earth" ],
+        [ "mverse:sandbox" ],
+        [ "mverse:sands_of_gold" ],
+        [ "mverse:silent_hill" ],
+        [ "mverse:trial_edition" ]
+    ],
+    "rewards": {
+        "experience": 300
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "parent": "mverse:hell_on_earth/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:red_bed"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.hell_on_earth.it_actually_works",
+            "fallback": "Hey, It Actually Works"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.hell_on_earth.it_actually_works.description",
+            "fallback": "... Well, sort of"
+        },
+
+        "hidden": true
+    },
+    "criteria": {
+        "slept_in_bed": {
+            "trigger": "minecraft:slept_in_bed",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "dimension": "mverse:hell_on_earth"
+                    }
+                }
+            }
+        }
+    }
+}

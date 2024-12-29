@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "mverse-lite",
+	"version": "${version}",
+	"name": "M'verse Lite",
+	"description": "M'verse Teleportation Tickets, dimensions and more",
+	"authors": [
+		"EZForever"
+	],
+	"contact": {
+		"homepage": "https://github.com/EZForever",
+		"sources": "https://github.com/EZForever/mverse-lite"
+	},
+	"license": "MIT",
+	"icon": "pack.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.ezforever.mverse.lite.Mod"
+		]
+	},
+	"mixins": [
+		"mverse-lite.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

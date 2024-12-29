@@ -1,0 +1,51 @@
+{
+    "parent": "mverse:badminton/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:crossbow",
+            "components": {
+                "minecraft:enchantments": {
+                    "levels": {
+                        "minecraft:piercing": 1
+                    }
+                }
+            }
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.badminton.technology",
+            "fallback": "We Can Has the Technology"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.badminton.technology.description",
+            "fallback": "Kill two Ghasts with a single shot"
+        },
+
+        "frame": "goal"
+    },
+    "criteria": {
+        "crossbow_kill": {
+            "trigger": "minecraft:killed_by_crossbow",
+            "conditions": {
+                "victims": [
+                    {
+                        "type": "minecraft:ghast",
+                        "location": {
+                            "dimension": "mverse:badminton"
+                        }
+                    },
+                    {
+                        "type": "minecraft:ghast",
+                        "location": {
+                            "dimension": "mverse:badminton"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "mverse.dimension.minecraft.overworld": "主世界",
+  "mverse.dimension.minecraft.the_nether": "下界",
+  "mverse.dimension.minecraft.the_end": "末路之地",
+
+  "mverse.anchor.name": "单程传送锚",
+  "mverse.anchor.dimension_and_pos": "%s，(%s, %s)",
+  "mverse.anchor.single_use": "限单次使用",
+  "mverse.anchor.food_grade": "食品级",
+
+  "mverse.command.disallowed_dimension": "指定的维度无效",
+  "mverse.command.insufficient_exp_level": "获取传送锚需要至少 %s 级经验",
+  "mverse.command.death_pos_not_available": "玩家 %s 没有最近死亡地点",
+
+  "mverse.teleport.target_not_valid": "你的磁石已被破坏",
+  "mverse.teleport.target_obstructed": "传送目标位置已被阻挡"
+}

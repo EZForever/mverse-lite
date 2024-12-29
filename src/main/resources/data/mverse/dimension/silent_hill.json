@@ -1,0 +1,23 @@
+{
+    "type": "mverse:silent_hill",
+    "generator": {
+        "type": "flat",
+        "settings": {
+            "layers": [
+                { "height": 1, "block": "minecraft:bedrock" },
+                { "height": 8, "block": "minecraft:cobbled_deepslate" },
+                { "height": 4, "block": "minecraft:deepslate" },
+                { "height": 51, "block": "minecraft:cave_air" },
+                { "height": 1, "block": "minecraft:reinforced_deepslate" },
+                { "height": 2, "block": "minecraft:dirt" },
+                { "height": 1, "block": "minecraft:grass_block" }
+            ],
+            "biome": "minecraft:deep_dark",
+            "lakes": true,
+            "features": true,
+            "structure_overrides": [
+                "minecraft:ancient_cities"
+            ]
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "parent": "mverse:badminton/score_1",
+    "display": {
+        "icon": {
+            "id": "minecraft:fire_charge"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.badminton.score.2",
+            "fallback": "Adequate Shuttler"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.badminton.score.2.description",
+            "fallback": "Score 30 points in the BADminton field!"
+        },
+
+        "frame": "goal"
+    },
+    "criteria": {
+        "score": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}

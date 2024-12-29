@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "mverse:avalanche/load",
+        "mverse:badminton/load",
+        "mverse:sands_of_gold/load",
+        "mverse:trial_edition/load"
+    ]
+}

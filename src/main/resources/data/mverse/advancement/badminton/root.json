@@ -1,0 +1,30 @@
+{
+    "parent": "mverse:root",
+    "display": {
+        "icon": {
+            "id": "minecraft:soul_soil"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.badminton.root",
+            "fallback": "BADminton"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.badminton.root.description",
+            "fallback": "An ever-losing battle"
+        },
+
+        "hidden": true,
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "dimension": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "mverse:badminton"
+            }
+        }
+    }
+}

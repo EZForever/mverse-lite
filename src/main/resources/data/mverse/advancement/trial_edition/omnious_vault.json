@@ -1,0 +1,50 @@
+{
+    "parent": "mverse:trial_edition/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:ominous_trial_key"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.trial_edition.ominous_vault",
+            "fallback": "Well Deserved"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.trial_edition.ominous_vault.description",
+            "fallback": "Win a Ominous Vault in a Trial Edition instance"
+        },
+
+        "frame": "goal"
+    },
+    "criteria": {
+        "ominous_vault": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "dimension": "mverse:trial_edition",
+                            "block": {
+                                "blocks": "minecraft:vault",
+                                "state": {
+                                    "ominous": "true"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                            "items": "minecraft:ominous_trial_key"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}

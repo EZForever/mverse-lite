@@ -1,0 +1,59 @@
+{
+    "parent": "mverse:arboretum/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_log"
+        },
+        "title": {
+            "type": "translatable",
+            "translate": "mverse.advancement.arboretum.even_more_trees",
+            "fallback": "Even more trees"
+        },
+        "description": {
+            "type": "translatable",
+            "translate": "mverse.advancement.arboretum.even_more_trees.description",
+            "fallback": "Fun fact: There are no End Cities in this dimension"
+        },
+
+        "hidden": true
+    },
+    "criteria": {
+        "location": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "dimension": "mverse:arboretum"
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "location": {
+                                    "position": {
+                                        "x": {
+                                            "min": -1000.0,
+                                            "max": 1000.0
+                                        },
+                                        "z": {
+                                            "min": -1000.0,
+                                            "max": 1000.0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
